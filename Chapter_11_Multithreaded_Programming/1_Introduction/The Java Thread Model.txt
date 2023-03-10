@@ -1,0 +1,12 @@
+There are two types of multitasking, namely process-based and thread-based. The latter is supported natively by Java.
+The low-level Fork/Join Framework in discussed in chapter 29.
+
+Each thread in Java is assigned a priority, which determines when a context switch takes place.
+
+In some languages, mutex locks, condition variables or semaphores must be exlictly defined and associated with an object.
+In Java, every single object has an implicit "monitor", similar to a mutex lock, that is automatically entered when a synchronized method is called.
+
+Java's multithreading system is built upon the Thread class, its method and its companion interface, Runnable.
+The Thread class or the Runnable interface serves as a proxy, encapsulating a running thread.
+
+The initial thread of a program is the main thread. It is usually also preferably the last thread to finish as it performs various shut-down actions.
